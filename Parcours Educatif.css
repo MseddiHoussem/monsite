@@ -1,0 +1,31 @@
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1c3d5a;
+            color: white;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .annee {
+            background-color: #e8f1ff;
+            font-weight: bold;
+            width: 100px;
+        }
+
+        tr:hover {
+            background-color: #f5faff;
+        }

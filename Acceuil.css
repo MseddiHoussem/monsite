@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+footer a {
+    color: #000; /* noir */
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #0d6efd; /* bleu Bootstrap */
+}
+
+.titre{
+    text-align: center;
+}
+/* Conteneur général : image + texte + formulaire alignés */
+.container-profil {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+/* Image */
+.left-side .photo-profil {
+    width: 260px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border: 4px solid #fff;
+}
+
+/* Colonne droite */
+.right-side {
+    max-width: 450px;
+    background: #ffffffd3;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Titres */
+.right-side h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.right-side h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Formulaire */
+.help-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.help-form input,
+.help-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.help-form button {
+    padding: 12px;
+    border: none;
+    background: #2575fc;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.help-form button:hover {
+    background: #1e63cf;
+}
+
+/* Responsive mobile */
+@media (max-width: 900px) {
+    .container-profil {
+        flex-direction: column;
+        align-items: center;
+    }
+}
